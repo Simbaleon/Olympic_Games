@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Olympic Games</title>
+  <link rel="stylesheet" href="mycss.css"> </head>
+<style>
+   html {
+    background-image: url('fon.png');
+  }
+  @media (max-width: 700px) {
+    html {
+      background-image: url('fon_2.png');
+    }
+</style>
+
+<body>
+ <header>
+    <div id="logo" >
+      <div class="log"> <a id="for_main" onclick="slowScroll('#top2')" href="main.html"><img src="olympic_rings_PNG14.png" alt="" width="110px" height="110px"> </a></div>
+    </div>
+    <div id="about">
+      <div class="dropdown">
+        <button class="mainmenubtn">Главное меню</button>
+        <div class="dropdown-child">
+       <a href="history.html" title="History" >История</a> <a href="winter.html" title="Winter" >Зимние игры</a> <a href="summer.html" title="Summer">Летние игры</a> <a href="contact.html" title="FAQ">FAQ</a> </div>
+
+      </div><a href="history.html" title="History" onclick="slowScroll('#main')">История</a> <a href="winter.html" title="Winter" onclick="slowScroll('#main')">Зимние игры</a> <a href="summer.html" title="Summer" onclick="slowScroll('#main')">Летние игры</a> <a href="contact.html" title="FAQ" onclick="slowScroll('#main')">FAQ</a> </div>
+  </header>
+  <div id="top2"> </div>
+  <div id="news">
+    <input checked type="radio" name="respond" id="desktop">
+    <article id="slider">
+      <input type="radio" name="slider" id="switch1">
+      <input type="radio" name="slider" id="switch2">
+      <input type="radio" name="slider" id="switch3">
+      <input type="radio" name="slider" id="switch4">
+      <input checked type="radio" name="slider" id="switch5">
+      <div id="slides">
+        <div id="overflow">
+          <div class="image">
+             <a href="new1.html">
+              <article><img src="NEW1.png" alt=""></article>
+            </a>
+            <a href="new2.html">
+              <article><img src="NEW2.png" alt=""></article>
+            </a>
+            <a href="new3.html" >
+              <article><img src="NEW3.png" alt=""></article>
+            </a>
+            <a href="new4.html">
+              <article><img src="NEW4.png" alt=""></article>
+            </a>
+              <article><img src="NEW5.png" alt=""></article>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="switch1"></label>
+        <label for="switch2"></label>
+        <label for="switch3"></label>
+        <label for="switch4"></label>
+        <label for="switch5"></label>
+      </div>
+      <div id="active">
+        <label for="switch1"></label>
+        <label for="switch2"></label>
+        <label for="switch3"></label>
+        <label for="switch4"></label>
+        <label for="switch5"></label>
+      </div>
+    </article>
+  </div>
+
+  <div class="OneNew" id="I">
+   <div class="head">
+        <h1>24/03/2020</h1>
+    <h3>Лето-2020 лишилось и Олимпийских игр</h3>
+   </div>
+
+    <p style="font-size: 1.5em"> Олимпийские игры-2020 состоятся в 2021-м. Такое решение было принято по итогам встречи представителей МОК, оргкомитета Игр и правительства Японии.
+<br><br>
+О решении объявил премьер-министр Японии Синдзо Абэ по окончании встречи.
+<br><br>
+Новые точные даты турнира неопределены, Игры должны состоятся не позднее лета 2021 года
+</p>
+    <p>
+      <li style=" font-size: 1.5em; text-align: left">Первоначально планировалось провести Олимпийские игры 24 июля – 9 августа.</li>
+      <li style=" font-size: 1.5em; text-align: left; margin-top: 0.8%">Ранее из-за эпидемии коронавирусы были отложены множество крупнейших спортивных турниров, включая Евро-2020 по футболу</li>
+      <li style=" font-size: 1.5em; text-align: left; margin-top: 0.8%">На полдень 24 марта было выявлено 392,1 тысячи случаев заражения. Больше 17 тысяч человек скончались</li>
+      <br> </p>
+
+  </div>
+
+
+  <div id="faq">
+    <div> <span class="title">Навигация по сайту</span>
+      <br>
+      <a href="history.html">
+        <p class="heading">История</p>
+      </a>
+      <a href="summer.html">
+      <p class="heading">Летние игры</p>
+      </a>
+      <a href="winter.html">
+        <p class="heading">Зимние игры</p>
+      </a>
+      <a href="contact.html">
+      <p class="heading">FAQ</p>
+      </a>
+    </div>
+   <div> <span class="title">Ссылки на странице</span>
+      <br>
+      <a href="#" onclick="slowScroll('#news')" title="Контакты">
+        <p class="heading">Новости</p>
+      </a>
+    </div>
+    <div> <span class="title">Поддержка</span>
+      <br>
+      <a href="https://vk.com/simbaleon17"><p class="heading">Вконтакте</p></a>
+        <a href="https://www.instagram.com/simbaleon_17"><p class="heading">Инстаграм</p></a>
+         <a href="tel:+79300851170"><p class="heading">+79300851170</p></a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+  <script src="swup.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script>
+    const swup = new Swup();
+  </script>
+   <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top - 100
+      }, 500);
+    }
+    $(document).on("scroll", function () {
+      if ($(window).scrollTop() === 0) {
+        $("header").removeClass("fixed");
+        document.getElementById('for_main').href ="main.html";
+      }
+      else {
+        $("header").attr("class", "fixed");
+         document.getElementById('for_main').href ="#";
+           }
+    });
+  </script>
+  <div id="foot">
+    <footer>
+      <p>&copy; Беликова Полина ИКБО-03-19</p>
+    </footer>
+  </div>
+</body>
+
+</html>

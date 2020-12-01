@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Olympic Games</title>
+  <link rel="stylesheet" href="mycss.css"> </head>
+<style>
+  html {
+    background-image: url(fon.png);
+  }
+
+  @media (max-width: 700px) {
+    html {
+      background-image: url('fon_2.png');
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <div class="log"> <img src="olympic_rings_PNG14.png" alt="" width="110px" height="110px"> </div>
+    </div>
+    <div id="about">
+      <div class="dropdown">
+        <button class="mainmenubtn">Главное меню</button>
+        <div class="dropdown-child">
+       <a href="history.html" title="History" >История</a> <a href="winter.html" title="Winter" >Зимние игры</a> <a href="summer.html" title="Summer">Летние игры</a> <a href="contact.html" title="FAQ">FAQ</a> </div>
+
+      </div><a href="history.html" title="History" onclick="slowScroll('#main')">История</a> <a href="winter.html" title="Winter" onclick="slowScroll('#main')">Зимние игры</a> <a href="summer.html" title="Summer" onclick="slowScroll('#main')">Летние игры</a> <a href="contact.html" title="FAQ" onclick="slowScroll('#main')">FAQ</a> </div>
+  </header>
+
+  <div id="top">
+    <h1>Олимпийские</h1>
+    <h3>игры</h3> </div>
+
+  <div class="all">
+    <input checked type="radio" name="respond" id="desktop">
+    <article id="slider">
+      <h2>Новости</h2>
+      <input checked type="radio" name="slider" id="switch1">
+      <input type="radio" name="slider" id="switch2">
+      <input type="radio" name="slider" id="switch3">
+      <input type="radio" name="slider" id="switch4">
+      <input type="radio" name="slider" id="switch5">
+      <div id="slides">
+        <div id="overflow">
+          <div class="image">
+            <a href="new1.html">
+              <article><img src="NEW1.png" alt=""></article>
+            </a>
+            <a href="new2.html">
+              <article><img src="NEW2.png" alt=""></article>
+            </a>
+            <a href="new3.html">
+              <article><img src="NEW3.png" alt=""></article>
+            </a>
+            <a href="new4.html">
+              <article><img src="NEW4.png" alt=""></article>
+            </a>
+            <a href="new5.html">
+              <article><img src="NEW5.png" alt=""></article>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="switch1"></label>
+        <label for="switch2"></label>
+        <label for="switch3"></label>
+        <label for="switch4"></label>
+        <label for="switch5"></label>
+      </div>
+      <div id="active">
+        <label for="switch1"></label>
+        <label for="switch2"></label>
+        <label for="switch3"></label>
+        <label for="switch4"></label>
+        <label for="switch5"></label>
+      </div>
+    </article>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Ближайшая Олимпиада:</h2> <span>(перенос)</span> </div>
+    <div class="text"> <span>Ле́тние Олимпи́йские и́гры 2020 — XXXII летние Олимпийские игры, которые должны были пройти в столице Японии Токио в 2020 году.</span> </div>
+    <div> <a href="winter.html">Подробнее</a> </div>
+  </div>
+  <div id="overview">
+    <h2>Символы</h2>
+    <h4>игр 2020</h4>
+    <div class="img"> <img src='11.png' alt=""> <span>Символ олимпийских игр (Мирайтова)</span> </div>
+    <div class="img"> <img src='22.png' alt=""> <span>Символ паралимпийских игр (Сомейти)</span> </div>
+  </div>
+  <div id="contacts">
+    <center>
+      <h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <p>Если остались вопросы, вы можете заполнить форму обратной связи</p>
+      <div id="mess_send" class="btn"><a href="contact.html">Заполнить</a></div>
+    </form>
+  </div>
+  <div id="faq">
+    <div> <span class="title">Навигация по сайту</span>
+      <br>
+      <a href="history.html">
+        <p class="heading">История</p>
+      </a>
+      <a href="summer.html">
+        <p class="heading">Летние игры</p>
+      </a>
+      <a href="winter.html">
+        <p class="heading">Зимние игры</p>
+      </a>
+      <a href="contact.html">
+        <p class="heading">FAQ</p>
+      </a>
+    </div>
+    <div> <span class="title">Ссылки на странице</span>
+      <br>
+      <a href="#" onclick="slowScroll('#slider')" title="Контакты">
+        <p class="heading">Новости</p>
+      </a>
+      <a href="#" onclick="slowScroll('#main')" title="Ответы на вопросы">
+        <p class="heading">Ближайшие игры</p>
+      </a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">
+        <p class="heading">Обратная связь</p>
+      </a>
+    </div>
+    <div> <span class="title">Поддержка</span>
+      <br>
+      <a href="https://vk.com/simbaleon17"><p class="heading">Вконтакте</p></a>
+        <a href="https://www.instagram.com/simbaleon_17"><p class="heading">Инстаграм</p></a>
+      <p class="heading">Телеграм</p>
+         <a href="tel:+79300851170"><p class="heading">+79300851170</p></a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top - 100
+      }, 500);
+    }
+    $(document).on("scroll", function () {
+      if ($(window).scrollTop() === 0) $("header").removeClass("fixed");
+      else $("header").attr("class", "fixed");
+    });
+  </script>
+  <div id="foot">
+    <footer>
+      <p>&copy; Беликова Полина ИКБО-03-19 (2020)</p>
+    </footer>
+  </div>
+</body>
+
+</html>
